@@ -27,7 +27,7 @@
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-jdbc4</artifactId>
   <version>0.2-SNAPSHOT</version>
-  <name>Apache Commons DBCP JMX extensions &gt; JDBC4</name>
+  <name>Apache Commons DBCP JMX extensions :: JDBC4</name>
 
   <properties>
     <java.target-version>1.6</java.target-version>

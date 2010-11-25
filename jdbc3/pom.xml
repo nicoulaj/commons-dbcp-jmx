@@ -27,7 +27,7 @@
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-jdbc3</artifactId>
   <version>0.2-SNAPSHOT</version>
-  <name>Apache Commons DBCP JMX extensions &gt; JDBC3</name>
+  <name>Apache Commons DBCP JMX extensions :: JDBC3</name>
 
   <properties>
     <java.target-version>1.5</java.target-version>
