@@ -111,13 +111,6 @@
     </dependencies>
   </dependencyManagement>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.weakref</groupId>
-      <artifactId>jmxutils</artifactId>
-    </dependency>
-  </dependencies>
-
   <modules>
     <module>jdbc3</module>
     <module>jdbc4</module>
