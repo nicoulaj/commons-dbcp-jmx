@@ -35,6 +35,11 @@ public class ManagedBasicDataSource extends BasicDataSource {
     public static final String DEFAULT_MBEAN_NAME = "org.apache.commons.dbcp:ManagedBasicDataSource=ManagedBasicDataSource-" + UUID.randomUUID();
 
     /**
+     * The name under which this object is exposed to the MBean server.
+     */
+    protected final String mBeanName;
+
+    /**
      * Build a new instance of {@link org.apache.commons.dbcp.ManagedBasicDataSource} and expose it as a MBean with an auto-generated unique name.
      *
      * @see #DEFAULT_MBEAN_NAME
@@ -52,16 +57,26 @@ public class ManagedBasicDataSource extends BasicDataSource {
      * @see #exportMBean(String)
      */
     public ManagedBasicDataSource(String mBeanName) {
+        this.mBeanName = mBeanName;
         exportMBean(mBeanName);
     }
 
     /**
      * Export this object as a MBean to the platform default MBean server.
      *
-     * @param name
+     * @param name the name of the MBean to expose.
      */
     protected synchronized void exportMBean(String name) {
         MBeanExporter.withPlatformMBeanServer().export(name, this);
+    }
+
+    /**
+     * Get the name under which this object is exposed to the MBean server.
+     *
+     * @return the MBean object name.
+     */
+    public String getmBeanName() {
+        return mBeanName;
     }
 
     /**
