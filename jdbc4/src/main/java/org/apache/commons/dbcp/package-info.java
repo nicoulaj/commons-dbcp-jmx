@@ -17,6 +17,6 @@
 /**
  * MBean extensions for Apache Commons Database Connection Pools (JDBC4).
  *
- * @since 1.0
+ * @since 0.1
  */
 package org.apache.commons.dbcp;
