@@ -41,159 +41,159 @@ public class ManagedBasicDataSourceFactory extends BasicDataSourceFactory {
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_DEFAULTAUTOCOMMIT = "defaultAutoCommit";
+    public final static String PROP_DEFAULTAUTOCOMMIT = "defaultAutoCommit";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_DEFAULTREADONLY = "defaultReadOnly";
+    public final static String PROP_DEFAULTREADONLY = "defaultReadOnly";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_DEFAULTTRANSACTIONISOLATION = "defaultTransactionIsolation";
+    public final static String PROP_DEFAULTTRANSACTIONISOLATION = "defaultTransactionIsolation";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_DEFAULTCATALOG = "defaultCatalog";
+    public final static String PROP_DEFAULTCATALOG = "defaultCatalog";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_DRIVERCLASSNAME = "driverClassName";
+    public final static String PROP_DRIVERCLASSNAME = "driverClassName";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MAXACTIVE = "maxActive";
+    public final static String PROP_MAXACTIVE = "maxActive";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MAXIDLE = "maxIdle";
+    public final static String PROP_MAXIDLE = "maxIdle";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MINIDLE = "minIdle";
+    public final static String PROP_MINIDLE = "minIdle";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_INITIALSIZE = "initialSize";
+    public final static String PROP_INITIALSIZE = "initialSize";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MAXWAIT = "maxWait";
+    public final static String PROP_MAXWAIT = "maxWait";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_TESTONBORROW = "testOnBorrow";
+    public final static String PROP_TESTONBORROW = "testOnBorrow";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_TESTONRETURN = "testOnReturn";
+    public final static String PROP_TESTONRETURN = "testOnReturn";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_TIMEBETWEENEVICTIONRUNSMILLIS = "timeBetweenEvictionRunsMillis";
+    public final static String PROP_TIMEBETWEENEVICTIONRUNSMILLIS = "timeBetweenEvictionRunsMillis";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_NUMTESTSPEREVICTIONRUN = "numTestsPerEvictionRun";
+    public final static String PROP_NUMTESTSPEREVICTIONRUN = "numTestsPerEvictionRun";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MINEVICTABLEIDLETIMEMILLIS = "minEvictableIdleTimeMillis";
+    public final static String PROP_MINEVICTABLEIDLETIMEMILLIS = "minEvictableIdleTimeMillis";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_TESTWHILEIDLE = "testWhileIdle";
+    public final static String PROP_TESTWHILEIDLE = "testWhileIdle";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_PASSWORD = "password";
+    public final static String PROP_PASSWORD = "password";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_URL = "url";
+    public final static String PROP_URL = "url";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_USERNAME = "username";
+    public final static String PROP_USERNAME = "username";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_VALIDATIONQUERY = "validationQuery";
+    public final static String PROP_VALIDATIONQUERY = "validationQuery";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_VALIDATIONQUERY_TIMEOUT = "validationQueryTimeout";
+    public final static String PROP_VALIDATIONQUERY_TIMEOUT = "validationQueryTimeout";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_INITCONNECTIONSQLS = "initConnectionSqls";
+    public final static String PROP_INITCONNECTIONSQLS = "initConnectionSqls";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_ACCESSTOUNDERLYINGCONNECTIONALLOWED = "accessToUnderlyingConnectionAllowed";
+    public final static String PROP_ACCESSTOUNDERLYINGCONNECTIONALLOWED = "accessToUnderlyingConnectionAllowed";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_REMOVEABANDONED = "removeAbandoned";
+    public final static String PROP_REMOVEABANDONED = "removeAbandoned";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_REMOVEABANDONEDTIMEOUT = "removeAbandonedTimeout";
+    public final static String PROP_REMOVEABANDONEDTIMEOUT = "removeAbandonedTimeout";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_LOGABANDONED = "logAbandoned";
+    public final static String PROP_LOGABANDONED = "logAbandoned";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_POOLPREPAREDSTATEMENTS = "poolPreparedStatements";
+    public final static String PROP_POOLPREPAREDSTATEMENTS = "poolPreparedStatements";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_MAXOPENPREPAREDSTATEMENTS = "maxOpenPreparedStatements";
+    public final static String PROP_MAXOPENPREPAREDSTATEMENTS = "maxOpenPreparedStatements";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String PROP_CONNECTIONPROPERTIES = "connectionProperties";
+    public final static String PROP_CONNECTIONPROPERTIES = "connectionProperties";
 
     /**
      * The key for the property where one can specify the name of the {@link ManagedBasicDataSource} Mbean.
      *
      * @see ManagedBasicDataSource#DEFAULT_MBEAN_NAME
      */
-    private final static String PROP_MBEANNAME = "mbeanName";
+    public final static String PROP_MBEANNAME = "mbeanName";
 
     /**
      * TODO Add Javadoc comment.
      */
-    private final static String[] ALL_PROPERTIES = {
+    public final static String[] ALL_PROPERTIES = {
             PROP_DEFAULTAUTOCOMMIT,
             PROP_DEFAULTREADONLY,
             PROP_DEFAULTTRANSACTIONISOLATION,
