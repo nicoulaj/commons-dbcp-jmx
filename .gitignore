@@ -15,3 +15,6 @@ target/
 # Maven release plugin files
 pom.xml.releaseBackup
 release.properties
+
+# mvn site:stage bug
+home/
