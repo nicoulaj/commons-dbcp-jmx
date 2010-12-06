@@ -200,4 +200,14 @@ public class ManagedBasicDataSource extends BasicDataSource {
     public synchronized String getUrl() {
         return super.getUrl();
     }
+
+    /**
+     * Get the JDBC connection {@link #username} property.
+     *
+     * @return the {@link #username} passed to the JDBC driver to establish connections.
+     */
+    @Managed
+    public String getUsername() {
+        return super.getUsername();
+    }
 }

@@ -67,7 +67,7 @@ public class ManagedBasicDataSourceTest extends AbstractMBeanTest {
      */
     @DataProvider(name = "testAttributeExistsProvider")
     public Object[][] testAttributeExistsProvider() {
-        return new Object[][]{{"NumActive"}, {"NumIdle"}, {"MaxActive"}, {"MaxIdle"}, {"MinIdle"}, {"MaxWait"}, {"Url"}};
+        return new Object[][]{{"NumActive"}, {"NumIdle"}, {"MaxActive"}, {"MaxIdle"}, {"MinIdle"}, {"MaxWait"}, {"Url"}, {"Username"}};
     }
 
     /**
