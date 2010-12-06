@@ -28,6 +28,7 @@
   <artifactId>commons-dbcp-jmx-jdbc3</artifactId>
   <version>0.2-SNAPSHOT</version>
   <name>Apache Commons DBCP JMX extensions :: JDBC3</name>
+  <description><![CDATA[Wrapper around Apache Commons DBCP datasources to expose some metrics and operations as Mbeans (JDBC3).]]></description>
 
   <properties>
     <java.target-version>1.5</java.target-version>
