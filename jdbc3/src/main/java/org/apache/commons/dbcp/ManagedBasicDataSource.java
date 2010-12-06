@@ -190,4 +190,14 @@ public class ManagedBasicDataSource extends BasicDataSource {
     public synchronized void setMaxWait(long maxWait) {
         super.setMaxWait(maxWait);
     }
+
+    /**
+     * Get the JDBC connection {@link #url} property.
+     *
+     * @return the {@link #url} passed to the JDBC driver to establish connections.
+     */
+    @Managed
+    public synchronized String getUrl() {
+        return super.getUrl();
+    }
 }
