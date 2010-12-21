@@ -25,7 +25,7 @@
   <name>Apache Commons DBCP JMX extensions</name>
   <inceptionYear>2010</inceptionYear>
   <description><![CDATA[Wrapper around Apache Commons DBCP datasources to expose some metrics and operations as Mbeans.]]></description>
-  <url>http://projects.ju-n.net/commons-dbcp-jmx</url>
+  <url>http://nicoulaj.github.com/commons-dbcp-jmx</url>
 
   <licenses>
     <license>
@@ -69,9 +69,8 @@
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
     <site>
-      <id>ju-n.net</id>
-      <name>commons-dbcp-jmx site on ju-n.net</name>
-      <url>ftp://ftp.ju-n.net/projects/commons-dbcp-jmx</url>
+      <id>github</id>
+      <url>gitsite:git@github.com/nicoulaj//commons-dbcp-jmx.git</url>
     </site>
   </distributionManagement>
 
@@ -257,9 +256,19 @@
 
     <extensions>
       <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-ftp</artifactId>
-        <version>1.0-beta-6</version>
+        <groupId>org.apache.maven.scm</groupId>
+        <artifactId>maven-scm-provider-gitexe</artifactId>
+        <version>1.4</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.scm</groupId>
+        <artifactId>maven-scm-manager-plexus</artifactId>
+        <version>1.4</version>
+      </extension>
+      <extension>
+        <groupId>org.kathrynhuxtable.maven.wagon</groupId>
+        <artifactId>wagon-gitsite</artifactId>
+        <version>0.2</version>
       </extension>
     </extensions>
 

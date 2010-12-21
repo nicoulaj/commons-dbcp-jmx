@@ -45,9 +45,6 @@
       <item name="Introduction" href="index.html"/>
     </menu>
     <menu ref="reports"/>
-    <menu name="Links">
-      <item name="Project home" href="http://github.com/nicoulaj/commons-dbcp-jmx"/>
-    </menu>
 
   </body>
 
