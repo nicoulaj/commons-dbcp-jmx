@@ -1,0 +1,30 @@
+-classpath
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/classes:/home/nicoulaj/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar:/home/nicoulaj/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/nicoulaj/.m2/repository/org/weakref/jmxutils/1.8/jmxutils-1.8.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2010. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Apache Commons DBCP JMX extensions :: JDBC3 0.3-SNAPSHOT API'
+-link
+'http://download-llnw.oracle.com/javase/1.6.0/docs/api'
+-link
+'http://commons.apache.org/dbcp/api-1.4'
+-link
+'http://java.sun.com/j2se/1.5.0/docs/api'
+-linkoffline
+'http://nicoulaj.github.com/commons-dbcp-jmx/commons-dbcp-jmx-jdbc4/apidocs' '/home/nicoulaj/projects/commons-dbcp-jmx/jdbc4/target/site/apidocs'
+-use
+-version
+-windowtitle
+'Apache Commons DBCP JMX extensions :: JDBC3 0.3-SNAPSHOT API'
