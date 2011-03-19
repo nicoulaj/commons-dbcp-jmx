@@ -14,8 +14,15 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>net.ju-n</groupId>
+    <artifactId>net-ju-n-parent</artifactId>
+    <version>1.0.2</version>
+  </parent>
 
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-parent</artifactId>
@@ -33,16 +40,6 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
     </license>
   </licenses>
-
-  <developers>
-    <developer>
-      <id>nicoulaj</id>
-      <name>Julien Nicoulaud</name>
-      <email>julien.nicoulaud@gmail.com</email>
-      <timezone>+1</timezone>
-      <url>http://www.github.com/nicoulaj</url>
-    </developer>
-  </developers>
 
   <scm>
     <url>http://github.com/nicoulaj/commons-dbcp-jmx</url>
@@ -74,28 +71,6 @@
     </site>
   </distributionManagement>
 
-  <properties>
-
-    <java.build-version>[1.6,)</java.build-version>
-
-    <encoding>UTF-8</encoding>
-    <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
-
-    <maven-plugin-plugin.version>2.6</maven-plugin-plugin.version>
-    <maven-site-plugin.version>3.0-beta-3</maven-site-plugin.version>
-    <maven-project-info-reports-plugin.version>2.2</maven-project-info-reports-plugin.version>
-    <maven-javadoc-plugin.version>2.7</maven-javadoc-plugin.version>
-    <maven-jxr-plugin.version>2.2</maven-jxr-plugin.version>
-    <maven-surefire-report-plugin.version>2.6</maven-surefire-report-plugin.version>
-    <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
-    <maven-pmd-plugin.version>2.5</maven-pmd-plugin.version>
-    <maven-checkstyle-plugin.version>2.6</maven-checkstyle-plugin.version>
-    <maven-changelog-plugin.version>2.2</maven-changelog-plugin.version>
-    <cobertura-maven-plugin.version>2.4</cobertura-maven-plugin.version>
-    <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
-
-  </properties>
-
   <prerequisites>
     <maven>3.0</maven>
   </prerequisites>
@@ -106,12 +81,6 @@
         <groupId>org.weakref</groupId>
         <artifactId>jmxutils</artifactId>
         <version>1.8</version>
-      </dependency>
-      <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>5.14.2</version>
-        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -127,7 +96,6 @@
       <plugins>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.3.2</version>
           <configuration>
             <source>${java.target-version}</source>
             <target>${java.target-version}</target>
@@ -137,55 +105,7 @@
           </configuration>
         </plugin>
         <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-invoker-plugin</artifactId>
-          <version>1.5</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.1</version>
-          <configuration>
-            <autoVersionSubmodules>true</autoVersionSubmodules>
-          </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.6</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.5</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>2.1.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.0</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>${maven-site-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-plugin-plugin</artifactId>
-          <version>${maven-plugin-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>${maven-project-info-reports-plugin.version}</version>
-        </plugin>
-        <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>${maven-javadoc-plugin.version}</version>
           <configuration>
             <encoding>${encoding}</encoding>
             <links>
@@ -193,41 +113,6 @@
               <link>http://commons.apache.org/dbcp/api-1.4</link>
             </links>
           </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-jxr-plugin</artifactId>
-          <version>${maven-jxr-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-report-plugin</artifactId>
-          <version>${maven-surefire-report-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-pmd-plugin</artifactId>
-          <version>${maven-pmd-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>${maven-checkstyle-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-changelog-plugin</artifactId>
-          <version>${maven-changelog-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>taglist-maven-plugin</artifactId>
-          <version>${taglist-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>cobertura-maven-plugin</artifactId>
-          <version>${cobertura-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>versions-maven-plugin</artifactId>
-          <version>1.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -244,8 +129,8 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>${java.build-version}</version>
-                  <message>Java version ${java.build-version} is required to build this project.</message>
+                  <version>[1.6,)</version>
+                  <message>Java version 1.6 is required to build this project.</message>
                 </requireJavaVersion>
               </rules>
             </configuration>
@@ -273,79 +158,6 @@
     </extensions>
 
   </build>
-
-  <profiles>
-    <profile>
-      <id>release</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-                <configuration>
-                  <useAgent>true</useAgent>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>check-updates</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>versions-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>validate</phase>
-                <goals>
-                  <goal>display-dependency-updates</goal>
-                  <goal>display-plugin-updates</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
   <reporting>
     <plugins>
