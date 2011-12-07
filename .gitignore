@@ -13,7 +13,7 @@ target/
 .classpath
 
 # Maven release plugin files
-pom.xml.releaseBackup
+pom.xml.*
 release.properties
 
 # mvn site:stage bug
