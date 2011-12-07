@@ -20,12 +20,12 @@
   <parent>
     <groupId>net.ju-n.commons-dbcp-jmx</groupId>
     <artifactId>commons-dbcp-jmx-parent</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.2.1</version>
   </parent>
 
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-jdbc3</artifactId>
-  <version>0.3-SNAPSHOT</version>
+  <version>0.2.1</version>
   <name>Apache Commons DBCP JMX extensions :: JDBC3</name>
   <description><![CDATA[Wrapper around Apache Commons DBCP datasources to expose some metrics and operations as Mbeans (JDBC3).]]></description>
 
