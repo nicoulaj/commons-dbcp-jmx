@@ -25,7 +25,7 @@
 
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-parent</artifactId>
-  <version>0.2.2-SNAPSHOT</version>
+  <version>0.2.2</version>
   <packaging>pom</packaging>
 
   <name>Apache Commons DBCP JMX extensions</name>
