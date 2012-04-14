@@ -53,9 +53,9 @@ commons-dbcp-jmx
 <dependency>
 +------------------------------------------+
 
-    .. or download it directly at {{{http://repo1.maven.org/maven2/net/ju-n/commons-dbcp-jmx/}Maven central repository}}.
+    .. or download it directly at {{{http://search.maven.org/#search%7Cga%7C1%7Ccommons-dbcp-jmx}Maven central repository}}.
 
-    * Replace usages for commons-dbcp classes to have MBeans automatically registered:
+    * Replace usages of commons-dbcp classes to have MBeans automatically registered:
 
 *------------------------------------------------------------------------------------------------------------------------------------------------:--------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Original class                                                                                                                                 | Mbean enabled class                                                                                                                                    |

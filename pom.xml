@@ -48,7 +48,7 @@
 
   <issueManagement>
     <system>Github</system>
-    <url>${project.scm.url}/issues</url>
+    <url>http://github.com/nicoulaj/commons-dbcp-jmx/issues</url>
   </issueManagement>
 
   <distributionManagement>

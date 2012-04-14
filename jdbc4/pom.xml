@@ -26,7 +26,7 @@
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
   <artifactId>commons-dbcp-jmx-jdbc4</artifactId>
   <version>0.2.2-SNAPSHOT</version>
-  <name>Apache Commons DBCP JMX extensions :: JDBC4</name>
+  <name>Apache Commons DBCP JMX extensions for JDBC4</name>
   <description><![CDATA[Wrapper around Apache Commons DBCP datasources to expose some metrics and operations as Mbeans (JDBC4).]]></description>
 
   <properties>
