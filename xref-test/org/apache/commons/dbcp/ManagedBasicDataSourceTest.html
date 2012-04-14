@@ -35,9 +35,9 @@
 <a class="jxr_linenumber" name="25" href="#25">25</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.testng.Assert.assertTrue;
 <a class="jxr_linenumber" name="26" href="#26">26</a>  
 <a class="jxr_linenumber" name="27" href="#27">27</a>  <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="28" href="#28">28</a>  <em class="jxr_javadoccomment"> * Tests for {@link org.apache.commons.dbcp.ManagedBasicDataSource}.</em>
+<a class="jxr_linenumber" name="28" href="#28">28</a>  <em class="jxr_javadoccomment"> * Tests for {@link ManagedBasicDataSource}.</em>
 <a class="jxr_linenumber" name="29" href="#29">29</a>  <em class="jxr_javadoccomment"> * &lt;p/&gt;</em>
-<a class="jxr_linenumber" name="30" href="#30">30</a>  <em class="jxr_javadoccomment"> * Only tests the added value to {@link org.apache.commons.dbcp.ManagedBasicDataSource}, i.e. the MBean part.</em>
+<a class="jxr_linenumber" name="30" href="#30">30</a>  <em class="jxr_javadoccomment"> * Only tests the added value to {@link ManagedBasicDataSource}, i.e. the MBean part.</em>
 <a class="jxr_linenumber" name="31" href="#31">31</a>  <em class="jxr_javadoccomment"> *</em>
 <a class="jxr_linenumber" name="32" href="#32">32</a>  <em class="jxr_javadoccomment"> * @author &lt;a href="<a href="mailto:julien.nicoulaud@gmail.com" target="alexandria_uri">mailto:julien.nicoulaud@gmail.com</a>"&gt;Julien Nicoulaud&lt;/a&gt;</em>
 <a class="jxr_linenumber" name="33" href="#33">33</a>  <em class="jxr_javadoccomment"> * @since 0.2</em>
@@ -50,7 +50,7 @@
 <a class="jxr_linenumber" name="40" href="#40">40</a>      <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">static</strong> Random randomGenerator = <strong class="jxr_keyword">new</strong> Random();
 <a class="jxr_linenumber" name="41" href="#41">41</a>  
 <a class="jxr_linenumber" name="42" href="#42">42</a>      <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="43" href="#43">43</a>  <em class="jxr_javadoccomment">     * Assert creating a new {@link org.apache.commons.dbcp.ManagedBasicDataSource} registers a MBean.</em>
+<a class="jxr_linenumber" name="43" href="#43">43</a>  <em class="jxr_javadoccomment">     * Assert creating a new {@link ManagedBasicDataSource} registers a MBean.</em>
 <a class="jxr_linenumber" name="44" href="#44">44</a>  <em class="jxr_javadoccomment">     *</em>
 <a class="jxr_linenumber" name="45" href="#45">45</a>  <em class="jxr_javadoccomment">     * @throws Exception should not happen.</em>
 <a class="jxr_linenumber" name="46" href="#46">46</a>  <em class="jxr_javadoccomment">     */</em>
@@ -61,7 +61,7 @@
 <a class="jxr_linenumber" name="51" href="#51">51</a>      }
 <a class="jxr_linenumber" name="52" href="#52">52</a>  
 <a class="jxr_linenumber" name="53" href="#53">53</a>      <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="54" href="#54">54</a>  <em class="jxr_javadoccomment">     * Assert creating a new {@link org.apache.commons.dbcp.ManagedBasicDataSource} through the {@link org.apache.commons.dbcp.ManagedBasicDataSourceFactory}</em>
+<a class="jxr_linenumber" name="54" href="#54">54</a>  <em class="jxr_javadoccomment">     * Assert creating a new {@link ManagedBasicDataSource} through the {@link ManagedBasicDataSourceFactory}</em>
 <a class="jxr_linenumber" name="55" href="#55">55</a>  <em class="jxr_javadoccomment">     * registers a MBean.</em>
 <a class="jxr_linenumber" name="56" href="#56">56</a>  <em class="jxr_javadoccomment">     *</em>
 <a class="jxr_linenumber" name="57" href="#57">57</a>  <em class="jxr_javadoccomment">     * @throws Exception should not happen.</em>
