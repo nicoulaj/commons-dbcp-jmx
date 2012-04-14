@@ -22,6 +22,8 @@ import javax.management.ObjectName;
 import java.util.Properties;
 import java.util.Random;
 
+import static org.testng.Assert.assertTrue;
+
 /**
  * Tests for {@link ManagedBasicDataSource}.
  * <p/>
@@ -45,7 +47,7 @@ public class ManagedBasicDataSourceTest extends AbstractMBeanTest {
     @Test
     public void testMBeanRegistered() throws Exception {
         final ManagedBasicDataSource testDataSource = new ManagedBasicDataSource();
-        assert getMBeanServerConnection().isRegistered(new ObjectName(testDataSource.getMBeanName()));
+        assertTrue(getMBeanServerConnection().isRegistered(new ObjectName(testDataSource.getMBeanName())));
     }
 
     /**
@@ -57,7 +59,7 @@ public class ManagedBasicDataSourceTest extends AbstractMBeanTest {
     @Test
     public void testMBeanRegisteredThroughFactory() throws Exception {
         final ManagedBasicDataSource testDataSource = (ManagedBasicDataSource) ManagedBasicDataSourceFactory.createDataSource(new Properties());
-        assert getMBeanServerConnection().isRegistered(new ObjectName(testDataSource.getMBeanName()));
+        assertTrue(getMBeanServerConnection().isRegistered(new ObjectName(testDataSource.getMBeanName())));
     }
 
     /**
@@ -125,6 +127,6 @@ public class ManagedBasicDataSourceTest extends AbstractMBeanTest {
         final Object attributeValue = getMBeanServerConnection().getAttribute(new ObjectName(testDataSource.getMBeanName()), attributeName);
 
         // Check both values are equal.
-        assert (ManagedBasicDataSource.class.getMethod(attributeGetterName).invoke(testDataSource)).equals(attributeValue);
+        assertTrue((ManagedBasicDataSource.class.getMethod(attributeGetterName).invoke(testDataSource)).equals(attributeValue));
     }
 }
