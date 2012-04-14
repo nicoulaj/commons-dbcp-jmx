@@ -20,7 +20,7 @@
   <parent>
     <groupId>net.ju-n</groupId>
     <artifactId>net-ju-n-parent</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.15</version>
   </parent>
 
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
@@ -79,7 +79,12 @@
       <dependency>
         <groupId>org.weakref</groupId>
         <artifactId>jmxutils</artifactId>
-        <version>1.10</version>
+        <version>1.12</version>
+      </dependency>
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.4</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
