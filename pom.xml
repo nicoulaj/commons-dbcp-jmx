@@ -51,6 +51,11 @@
     <url>http://github.com/nicoulaj/commons-dbcp-jmx/issues</url>
   </issueManagement>
 
+  <ciManagement>
+    <system>Travis-CI</system>
+    <url>http://travis-ci.org/nicoulaj/commons-dbcp-jmx</url>
+  </ciManagement>
+
   <distributionManagement>
     <downloadUrl>https://oss.sonatype.org/content/groups/public</downloadUrl>
     <repository>
