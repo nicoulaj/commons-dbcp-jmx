@@ -1,4 +1,4 @@
-commons-dbcp-jmx [![Build Status](https://secure.travis-ci.org/nicoulaj/commons-dbcp-jmx.png)](http://travis-ci.org/nicoulaj/commons-dbcp-jmx)
+commons-dbcp-jmx [![Build Status](https://buildhive.cloudbees.com/job/nicoulaj/job/commons-dbcp-jmx/badge/icon)](https://buildhive.cloudbees.com/job/nicoulaj/job/commons-dbcp-jmx/)
 ================
 
 Wrapper around [Apache Commons DBCP](http://commons.apache.org/dbcp) datasources to expose some metrics and operations as Mbeans.

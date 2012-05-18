@@ -52,8 +52,8 @@
   </issueManagement>
 
   <ciManagement>
-    <system>Travis-CI</system>
-    <url>http://travis-ci.org/nicoulaj/commons-dbcp-jmx</url>
+    <system>Cloudbees BuildHive</system>
+    <url>https://buildhive.cloudbees.com/job/nicoulaj/job/commons-dbcp-jmx</url>
   </ciManagement>
 
   <distributionManagement>
