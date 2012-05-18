@@ -18,3 +18,7 @@ release.properties
 
 # mvn site:stage bug
 home/
+
+# Local stuff
+local/
+
