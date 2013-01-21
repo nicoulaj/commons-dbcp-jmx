@@ -1,21 +1,21 @@
 -classpath
-'/home/nicoulaj/projects/commons-dbcp-jmx/target/classes:/home/nicoulaj/projects/commons-dbcp-jmx/target/test-classes:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/classes:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/test-classes:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc4/target/classes:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc4/target/test-classes:/home/nicoulaj/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/home/nicoulaj/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/home/nicoulaj/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/nicoulaj/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/nicoulaj/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/home/nicoulaj/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/nicoulaj/.m2/repository/org/testng/testng/6.4/testng-6.4.jar:/home/nicoulaj/.m2/repository/org/weakref/jmxutils/1.12/jmxutils-1.12.jar:/home/nicoulaj/.m2/repository/junit/junit/4.10/junit-4.10.jar'
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/classes:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/test-classes:/home/nicoulaj/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/home/nicoulaj/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/home/nicoulaj/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar:/home/nicoulaj/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/nicoulaj/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/home/nicoulaj/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/nicoulaj/.m2/repository/org/testng/testng/6.4/testng-6.4.jar:/home/nicoulaj/.m2/repository/org/weakref/jmxutils/1.12/jmxutils-1.12.jar:/home/nicoulaj/.m2/repository/junit/junit/4.10/junit-4.10.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/src/test/java:/home/nicoulaj/projects/commons-dbcp-jmx/jdbc4/src/test/java'
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/src/test/java'
 -author
 -bottom
 'Copyright &#169; 2010-2013. All Rights Reserved.'
 -charset
 'UTF-8'
 -d
-'/home/nicoulaj/projects/commons-dbcp-jmx/target/site/testapidocs'
+'/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/site/testapidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'Apache Commons DBCP JMX extensions 0.2.2 Test API'
+'Apache Commons DBCP JMX extensions for JDBC3 0.2.2 Test API'
 -link
 'http://download-llnw.oracle.com/javase/1.6.0/docs/api'
 -link
@@ -23,8 +23,8 @@
 -link
 '../apidocs'
 -linkoffline
-'http://download.oracle.com/javase/6/docs/api' '/home/nicoulaj/projects/commons-dbcp-jmx/target/javadoc-bundle-options'
+'http://download.oracle.com/javase/1.5.0/docs/api' '/home/nicoulaj/projects/commons-dbcp-jmx/jdbc3/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'Apache Commons DBCP JMX extensions 0.2.2 Test API'
+'Apache Commons DBCP JMX extensions for JDBC3 0.2.2 Test API'
