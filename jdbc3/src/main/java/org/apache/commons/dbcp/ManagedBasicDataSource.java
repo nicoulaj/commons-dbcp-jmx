@@ -18,6 +18,8 @@ package org.apache.commons.dbcp;
 import org.weakref.jmx.MBeanExporter;
 import org.weakref.jmx.Managed;
 
+import javax.management.MBeanServer;
+import java.lang.management.ManagementFactory;
 import java.util.UUID;
 
 /**
@@ -42,7 +44,7 @@ public class ManagedBasicDataSource extends BasicDataSource {
      * Build a new instance of {@link org.apache.commons.dbcp.ManagedBasicDataSource} and expose it as a MBean with an auto-generated unique name.
      *
      * @see #DEFAULT_MBEAN_NAME
-     * @see #exportMBean(String)
+     * @see #exportMBean(MBeanServer, String)
      */
     public ManagedBasicDataSource() {
         this(DEFAULT_MBEAN_NAME + "-" + UUID.randomUUID());
@@ -53,20 +55,34 @@ public class ManagedBasicDataSource extends BasicDataSource {
      *
      * @param mBeanName the name of the MBean to expose, should be unique accross the target application.
      * @see #DEFAULT_MBEAN_NAME
-     * @see #exportMBean(String)
+     * @see #exportMBean(MBeanServer, String)
      */
     public ManagedBasicDataSource(String mBeanName) {
+        this(ManagementFactory.getPlatformMBeanServer(), mBeanName);
+    }
+
+    /**
+     * Build a new instance of {@link org.apache.commons.dbcp.ManagedBasicDataSource} and expose it as a MBean with the specified name.
+     *
+     *
+     * @param mBeanServer
+     * @param mBeanName the name of the MBean to expose, should be unique accross the target application.
+     * @see #DEFAULT_MBEAN_NAME
+     * @see #exportMBean(MBeanServer, String)
+     */
+    public ManagedBasicDataSource(MBeanServer mBeanServer, String mBeanName) {
         this.mBeanName = mBeanName;
-        exportMBean(mBeanName);
+        exportMBean(mBeanServer, mBeanName);
     }
 
     /**
      * Export this object as a MBean to the platform default MBean server.
      *
+     * @param mBeanServer
      * @param name the name of the MBean to expose.
      */
-    protected synchronized void exportMBean(String name) {
-        MBeanExporter.withPlatformMBeanServer().export(name, this);
+    protected synchronized void exportMBean(MBeanServer mBeanServer, String name) {
+        new MBeanExporter(mBeanServer).export(name, this);
     }
 
     /**
