@@ -20,7 +20,7 @@
   <parent>
     <groupId>net.ju-n</groupId>
     <artifactId>net-ju-n-parent</artifactId>
-    <version>23</version>
+    <version>26</version>
   </parent>
 
   <groupId>net.ju-n.commons-dbcp-jmx</groupId>
@@ -107,25 +107,6 @@
     </pluginManagement>
 
     <plugins>
-      <plugin>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>enforce-java-build-version</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <requireJavaVersion>
-                  <version>(1.5,1.7)</version>
-                  <message>Java version 1.6 is required to build this project.</message>
-                </requireJavaVersion>
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <dependencies>
